@@ -157,6 +157,6 @@ def update_plots(clickData, n_submit, search_value):
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    import os
     port = int(os.environ.get("PORT", 10000))
     app.run_server(debug=True, host='0.0.0.0', port=port)
